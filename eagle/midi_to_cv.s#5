@@ -15353,7 +15353,6 @@ at 30/07/2012 17:45:58</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB4(MISO)"/>
 <wire x1="43.18" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="17.78" x2="50.8" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -15384,14 +15383,12 @@ at 30/07/2012 17:45:58</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="PB3(MOSI/OC2)"/>
 <wire x1="43.18" y1="20.32" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-71.12" x2="53.34" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB2(SS/OC1B)"/>
 <wire x1="43.18" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="22.86" x2="55.88" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">

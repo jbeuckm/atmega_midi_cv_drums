@@ -14872,8 +14872,6 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <sheets>
 <sheet>
 <plain>
-<text x="-165.1" y="101.6" size="1.778" layer="91">MIDI_IN_4</text>
-<text x="-58.42" y="106.68" size="1.778" layer="91">MIDI_IN_5</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="17.78" y="48.26"/>
@@ -14930,8 +14928,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <instance part="R5" gate="G$1" x="-25.4" y="116.84"/>
 <instance part="R6" gate="G$1" x="25.4" y="119.38" rot="R90"/>
 <instance part="P+6" gate="1" x="15.24" y="132.08"/>
-<instance part="MIDI_IN" gate="-1" x="-38.1" y="116.84" rot="MR0"/>
-<instance part="MIDI_IN" gate="-2" x="-33.02" y="106.68" rot="MR0"/>
+<instance part="MIDI_IN" gate="-1" x="-38.1" y="111.76" rot="MR0"/>
+<instance part="MIDI_IN" gate="-2" x="-38.1" y="106.68" rot="MR0"/>
 <instance part="GND4" gate="1" x="17.78" y="96.52"/>
 <instance part="P+2" gate="1" x="109.22" y="53.34"/>
 </instances>
@@ -15487,7 +15485,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-15.24" y1="106.68" x2="-17.78" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="106.68" x2="-17.78" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="106.68" x2="-17.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="106.68" x2="-17.78" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-17.78" y="106.68"/>
 <pinref part="MIDI_IN" gate="-2" pin="S"/>
 </segment>
@@ -15506,7 +15504,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <net name="N$19" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="116.84" x2="-30.48" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="111.76" x2="-30.48" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="MIDI_IN" gate="-1" pin="S"/>
 </segment>
 </net>
