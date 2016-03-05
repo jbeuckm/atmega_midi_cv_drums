@@ -1,13 +1,11 @@
-atmega_midi_cv_polysynth
+atmega_midi_cv_drums
 ========================
 
-(This is a new clone of my monosynth MIDI>CV that will be modified for polyphonic productions.)
+Uses TLV5628 octal DAC to generate eight velocity CV signals. A CMOS addressable latch (CD4099) generates eight gate signals.
 
-Uses the Arduino MIDI library to operate four x MCP4822 12-bit DAC with internal voltage reference.
+Euro power connectors distribute the gate and CV signals for eight drum voices.
 
-Largely based on http://www.experimentalistsanonymous.com/ve3wwg/doku.php?id=analog_synth_midi
-
-Uses 4922 library from http://www.alhin.de/arduino
+MIDI notes start at 100 so we can use channel 10 without overlapping the General MIDI percussion map.
 
 ![screenshot](schemo.png)
 
