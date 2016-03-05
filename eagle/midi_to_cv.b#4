@@ -2463,6 +2463,34 @@ design rules under a new name.</description>
 <signal name="N$70">
 <contactref element="R26" pad="2"/>
 </signal>
+<signal name="N$6">
+<contactref element="IC3" pad="13"/>
+<contactref element="U$8" pad="16"/>
+<contactref element="U$8" pad="15"/>
+<wire x1="-26.924" y1="-218.44" x2="-26.924" y2="-220.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.068" y1="-160.274" x2="-26.924" y2="-218.44" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9">
+<contactref element="IC3" pad="14"/>
+<contactref element="U$9" pad="16"/>
+<contactref element="U$9" pad="15"/>
+<wire x1="-26.924" y1="-229.616" x2="-38.608" y2="-160.274" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.924" y1="-232.156" x2="-26.924" y2="-229.616" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$12">
+<contactref element="IC3" pad="15"/>
+<contactref element="U$10" pad="16"/>
+<contactref element="U$10" pad="15"/>
+<wire x1="-26.924" y1="-240.792" x2="-41.148" y2="-160.274" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.924" y1="-243.332" x2="-26.924" y2="-240.792" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="IC3" pad="1"/>
+<contactref element="U$1" pad="16"/>
+<contactref element="U$1" pad="15"/>
+<wire x1="-26.924" y1="-173.736" x2="-43.688" y2="-167.894" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.924" y1="-176.276" x2="-26.924" y2="-173.736" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 </board>
 </drawing>

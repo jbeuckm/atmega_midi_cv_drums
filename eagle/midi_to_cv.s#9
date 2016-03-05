@@ -14807,6 +14807,7 @@ Based on the following sources:
 <part name="U$8" library="eurorack" deviceset="POWER" device=""/>
 <part name="U$9" library="eurorack" deviceset="POWER" device=""/>
 <part name="U$10" library="eurorack" deviceset="POWER" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14925,6 +14926,7 @@ Based on the following sources:
 <instance part="U$8" gate="G$1" x="259.08" y="-2.54" rot="MR0"/>
 <instance part="U$9" gate="G$1" x="259.08" y="-27.94" rot="MR0"/>
 <instance part="U$10" gate="G$1" x="259.08" y="-55.88" rot="MR0"/>
+<instance part="GND20" gate="1" x="223.52" y="-101.6"/>
 </instances>
 <busses>
 </busses>
@@ -15200,6 +15202,12 @@ Based on the following sources:
 <pinref part="IC3" gate="P" pin="VSS"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="223.52" y1="-99.06" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<wire x1="223.52" y1="129.54" x2="248.92" y2="129.54" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -15245,8 +15253,34 @@ Based on the following sources:
 <segment>
 <pinref part="U$1" gate="G$1" pin="+12V"/>
 <wire x1="248.92" y1="-78.74" x2="238.76" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="-78.74" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="-78.74" x2="238.76" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="P+18" gate="1" pin="+12V"/>
+<pinref part="U$3" gate="G$1" pin="+12V"/>
+<wire x1="238.76" y1="-50.8" x2="238.76" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="-22.86" x2="238.76" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="2.54" x2="238.76" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="50.8" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="78.74" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="106.68" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="132.08" x2="238.76" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="132.08" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<junction x="238.76" y="132.08"/>
+<pinref part="U$2" gate="G$1" pin="+12V"/>
+<wire x1="248.92" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
+<junction x="238.76" y="106.68"/>
+<wire x1="251.46" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
+<junction x="238.76" y="78.74"/>
+<pinref part="U$7" gate="G$1" pin="+12V"/>
+<wire x1="248.92" y1="50.8" x2="238.76" y2="50.8" width="0.1524" layer="91"/>
+<junction x="238.76" y="50.8"/>
+<pinref part="U$8" gate="G$1" pin="+12V"/>
+<wire x1="248.92" y1="2.54" x2="238.76" y2="2.54" width="0.1524" layer="91"/>
+<junction x="238.76" y="2.54"/>
+<pinref part="U$9" gate="G$1" pin="+12V"/>
+<wire x1="248.92" y1="-22.86" x2="238.76" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="238.76" y="-22.86"/>
+<wire x1="251.46" y1="-50.8" x2="238.76" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="238.76" y="-50.8"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -15281,9 +15315,37 @@ Based on the following sources:
 </segment>
 <segment>
 <pinref part="P-1" gate="1" pin="-12V"/>
-<wire x1="233.68" y1="-99.06" x2="233.68" y2="127" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-99.06" x2="233.68" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-83.82" x2="233.68" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-55.88" x2="233.68" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-27.94" x2="233.68" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-2.54" x2="233.68" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="45.72" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="73.66" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="101.6" x2="233.68" y2="127" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="127" x2="248.92" y2="127" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="-12V"/>
+<pinref part="U$2" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
+<junction x="233.68" y="101.6"/>
+<pinref part="U$6" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="73.66" x2="233.68" y2="73.66" width="0.1524" layer="91"/>
+<junction x="233.68" y="73.66"/>
+<pinref part="U$7" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="45.72" x2="233.68" y2="45.72" width="0.1524" layer="91"/>
+<junction x="233.68" y="45.72"/>
+<pinref part="U$8" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="-2.54" x2="233.68" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="233.68" y="-2.54"/>
+<pinref part="U$9" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="-27.94" x2="233.68" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="233.68" y="-27.94"/>
+<pinref part="U$10" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="-55.88" x2="233.68" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="233.68" y="-55.88"/>
+<pinref part="U$1" gate="G$1" pin="-12V"/>
+<wire x1="248.92" y1="-83.82" x2="233.68" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="233.68" y="-83.82"/>
 </segment>
 </net>
 <net name="N$6" class="0">

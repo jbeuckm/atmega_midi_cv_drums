@@ -1899,8 +1899,6 @@ design rules under a new name.</description>
 <element name="PAD12" library="wirepad" package="2,54/0,9" value="reset" x="11.43" y="38.1"/>
 <element name="PAD13" library="wirepad" package="2,54/0,9" value="reset " x="69.85" y="73.66"/>
 <element name="PAD14" library="wirepad" package="2,54/0,9" value="gate LED" x="20.32" y="11.43"/>
-<element name="R26" library="rcl" package="0207/10" value="1k" x="31.75" y="67.31" rot="R90"/>
-<element name="R27" library="rcl" package="0207/10" value="1k" x="34.29" y="67.31" rot="R270"/>
 <element name="U$3" library="eurorack" package="POWER_16" value="POWER" x="-38.354" y="-86.36"/>
 <element name="PWR1" library="eurorack" package="POWER_16" value="POWER" x="-38.354" y="-115.824"/>
 <element name="U$4" library="adafruit" package="FB" value="FB" x="-42.672" y="-133.096"/>
@@ -2079,7 +2077,6 @@ design rules under a new name.</description>
 <contactref element="C1" pad="1"/>
 <contactref element="PAD13" pad="1"/>
 <contactref element="PAD14" pad="1"/>
-<contactref element="R27" pad="1"/>
 <wire x1="20.32" y1="11.43" x2="27.94" y2="19.05" width="0.8128" layer="16"/>
 <wire x1="27.94" y1="19.05" x2="29.21" y2="19.05" width="0.8128" layer="16"/>
 <wire x1="29.21" y1="19.05" x2="30.099" y2="18.923" width="0.8128" layer="16"/>
@@ -2095,8 +2092,6 @@ design rules under a new name.</description>
 <wire x1="43.18" y1="30.48" x2="42.926" y2="31.496" width="0.8128" layer="16"/>
 <wire x1="42.926" y1="31.496" x2="41.656" y2="32.766" width="0.8128" layer="16"/>
 <wire x1="41.656" y1="32.766" x2="41.91" y2="35.56" width="0.8128" layer="16"/>
-<wire x1="34.29" y1="72.39" x2="34.29" y2="65.532" width="0.8128" layer="16"/>
-<wire x1="34.29" y1="65.532" x2="36.322" y2="63.5" width="0.8128" layer="16"/>
 <wire x1="33.02" y1="55.626" x2="35.052" y2="53.594" width="0.8128" layer="16"/>
 <wire x1="35.052" y1="53.594" x2="36.576" y2="53.594" width="0.8128" layer="16"/>
 <wire x1="36.576" y1="53.594" x2="36.576" y2="54.356" width="0.8128" layer="16"/>
@@ -2219,8 +2214,7 @@ design rules under a new name.</description>
 <wire x1="-39.624" y1="-85.09" x2="-39.624" y2="-87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.084" y1="-85.09" x2="-37.084" y2="-87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="11.43" x2="-37.084" y2="-85.09" width="0" layer="19" extent="1-1"/>
-<wire x1="36.322" y1="63.5" x2="33.02" y2="55.626" width="0" layer="19" extent="16-16"/>
-<wire x1="69.85" y1="73.66" x2="36.322" y2="63.5" width="0" layer="19" extent="16-16"/>
+<wire x1="69.85" y1="73.66" x2="43.688" y2="48.514" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+12V">
 <contactref element="C4" pad="+"/>
@@ -2362,12 +2356,6 @@ design rules under a new name.</description>
 <wire x1="-39.624" y1="-114.554" x2="-39.624" y2="-117.094" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.084" y1="-114.554" x2="-37.084" y2="-117.094" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$53">
-<contactref element="R26" pad="1"/>
-<contactref element="R27" pad="2"/>
-<wire x1="30.48" y1="63.5" x2="31.75" y2="62.23" width="0.8128" layer="16"/>
-<wire x1="34.29" y1="62.23" x2="31.75" y2="62.23" width="0.8128" layer="16"/>
-</signal>
 <signal name="N$2">
 <contactref element="PWR1" pad="9"/>
 <contactref element="PWR1" pad="10"/>
@@ -2459,9 +2447,6 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="15"/>
 <wire x1="-26.924" y1="-87.63" x2="-25.908" y2="-160.274" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.924" y1="-85.09" x2="-26.924" y2="-87.63" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$70">
-<contactref element="R26" pad="2"/>
 </signal>
 <signal name="N$6">
 <contactref element="IC3" pad="13"/>
