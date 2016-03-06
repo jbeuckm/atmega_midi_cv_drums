@@ -1,5 +1,5 @@
 #include <MIDI.h>
-#include "AH_MCP4922.h"
+#include "TLV5628.h"
 
 //define AnalogOutput (MOSI_pin, SCK_pin, CS_pin, DAC_x, GAIN) 
 
