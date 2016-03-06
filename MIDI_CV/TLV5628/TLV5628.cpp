@@ -14,7 +14,7 @@ TLV5628::TLV5628(int clkPin, int dataPin, int loadPin, int ldacPin) {
 }
 
 
-void TLV5628::send(int dacNumber, char value) {
+void TLV5628::setValue(int dacNumber, char value) {
     
 }
 
