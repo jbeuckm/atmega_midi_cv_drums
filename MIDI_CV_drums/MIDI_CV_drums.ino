@@ -1,5 +1,5 @@
 #include <MIDI.h>
-#include "TLV5628.h"
+#include "TLV5628/TLV5628.h"
 
 #define CLK_PIN 7
 #define LOAD_PIN 10
@@ -28,7 +28,7 @@ void initLatch(int A0, int A1, int A2, int ENABLE, int CLEAR, int DATA)
 
   digitalWrite(ENABLE, HIGH);
   digitalWrite(CLEAR, HIGH);
-  delayMilliseconds(1);
+  delayMicroseconds(1);
   digitalWrite(CLEAR, LOW);
 }
 
@@ -40,7 +40,7 @@ void setLatchPin(int pin, bool data)
 
   digitalWrite(GATE_LATCH_DATA, data);
   digitalWrite(GATE_LATCH_ENABLE, LOW);
-  delayMilliseconds(1);
+  delayMicroseconds(1);
   digitalWrite(GATE_LATCH_ENABLE, HIGH);
 }
 
@@ -75,6 +75,9 @@ void handleNoteOff(byte channel, byte pitch, byte velocity)
 
 void setup()
 {
+  initLatch(GATE_LATCH_A0, GATE_LATCH_A1, GATE_LATCH_A2, 
+  GATE_LATCH_ENABLE, GATE_LATCH_CLEAR, GATE_LATCH_DATA);
+
 
   MIDI.setHandleNoteOn(handleNoteOn);
   MIDI.setHandleNoteOff(handleNoteOff);

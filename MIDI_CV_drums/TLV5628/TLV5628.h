@@ -11,7 +11,7 @@ class TLV5628
 
   public:
     TLV5628(int clkPin, int dataPin, int loadPin, int ldacPin);
-    setValue(int dacNumber, char value);
+    void setValue(int dacNumber, char value);
 
   private:
     int _clkPin, _dataPin, _loadPin, _ldacPin;
