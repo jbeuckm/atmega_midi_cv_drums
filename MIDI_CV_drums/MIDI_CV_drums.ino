@@ -13,7 +13,9 @@
 #define GATE_LATCH_CLEAR A3
 #define GATE_LATCH_DATA A5
 
-TLV5628 velocityDAC();
+#define GATE_LED 13
+
+//TLV5628 velocityDAC();
 
 MIDI_CREATE_DEFAULT_INSTANCE();
 
@@ -50,9 +52,11 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
   if (pitch < 100) return;
   if (pitch > 107) return;
 
+  digitalWrite(GATE_LED, HIGH);
+
   int voice = pitch - 100;
 
-  velocityDAC.setValue(voice, velocity << 1);
+//  velocityDAC.setValue(voice, velocity << 1);
 
   setLatchPin(voice, HIGH);
 }
@@ -62,9 +66,11 @@ void handleNoteOff(byte channel, byte pitch, byte velocity)
   if (pitch < 100) return;
   if (pitch > 107) return;
 
+  digitalWrite(GATE_LED, LOW);
+
   int voice = pitch - 100;
 
-  velocityDAC.setValue(voice, velocity << 1);
+//  velocityDAC.setValue(voice, velocity << 1);
 
   setLatchPin(voice, LOW);
 }
@@ -78,6 +84,7 @@ void setup()
   initLatch(GATE_LATCH_A0, GATE_LATCH_A1, GATE_LATCH_A2, 
   GATE_LATCH_ENABLE, GATE_LATCH_CLEAR, GATE_LATCH_DATA);
 
+  pinMode(GATE_LED, OUTPUT);
 
   MIDI.setHandleNoteOn(handleNoteOn);
   MIDI.setHandleNoteOff(handleNoteOff);
