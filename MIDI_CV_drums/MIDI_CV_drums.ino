@@ -17,9 +17,31 @@ TLV5628 velocityDAC();
 
 MIDI_CREATE_DEFAULT_INSTANCE();
 
-void setLatchPin(byte pin, bool data)
+void initLatch(int A0, int A1, int A2, int ENABLE, int CLEAR, int DATA) 
 {
-  
+  pinMode(A0, OUTPUT);
+  pinMode(A1, OUTPUT);
+  pinMode(A2, OUTPUT);
+  pinMode(ENABLE, OUTPUT);
+  pinMode(CLEAR, OUTPUT);
+  pinMode(DATA, OUTPUT);
+
+  digitalWrite(ENABLE, HIGH);
+  digitalWrite(CLEAR, HIGH);
+  delayMilliseconds(1);
+  digitalWrite(CLEAR, LOW);
+}
+
+void setLatchPin(int pin, bool data)
+{  
+  digitalWrite(GATE_LATCH_A0, (pin & B001));
+  digitalWrite(GATE_LATCH_A1, ((pin >> 1) & B001));
+  digitalWrite(GATE_LATCH_A2, ((pin >> 2) & B001));
+
+  digitalWrite(GATE_LATCH_DATA, data);
+  digitalWrite(GATE_LATCH_ENABLE, LOW);
+  delayMilliseconds(1);
+  digitalWrite(GATE_LATCH_ENABLE, HIGH);
 }
 
 
