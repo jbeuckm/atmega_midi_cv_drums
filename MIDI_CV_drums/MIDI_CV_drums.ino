@@ -62,12 +62,9 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
 
   byte voice = pitch - 100;
 
-  voice_gates[voice] = 3;
+  voice_gates[voice] = 2;
   voice_accents[voice] = velocity << 1;
 
-  velocityDAC.setValue(dacMap[voice], velocity << 1);
-
-  setLatchPin(voice, HIGH);
 }
 
 
@@ -77,11 +74,15 @@ ISR(TIMER1_COMPA_vect) {
   for (i=0; i<8; i++) {
     
     if (voice_gates[i] > 1) {
+      velocityDAC.setValue(dacMap[i], voice_accents[i]);
+      setLatchPin(i, HIGH);
       voice_gates[i] -= 1;
     }
     else if (voice_gates[i] == 1) {
-      setLatchPin(i, 0);
+      setLatchPin(i, LOW);
+      velocityDAC.setValue(dacMap[i], 0);
       voice_gates[i] = 0;
+      digitalWrite(GATE_LED, LOW);
     }
     
   }
