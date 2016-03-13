@@ -20,6 +20,9 @@ TLV5628 velocityDAC(CLK_PIN, DATA_PIN, LOAD_PIN, LDAC_PIN);
 // this corrects since the layout doesn't maintain voice order for the DAC output lines
 byte dacMap[] = {0, 1, 2, 3, 7, 6, 5, 4};
 
+byte voice_gates[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+byte voice_accents[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+
 MIDI_CREATE_DEFAULT_INSTANCE();
 
 void initLatch(int A0, int A1, int A2, int ENABLE, int CLEAR, int DATA) 
@@ -59,26 +62,31 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
 
   byte voice = pitch - 100;
 
+  voice_gates[voice] = 3;
+  voice_accents[voice] = velocity << 1;
+
   velocityDAC.setValue(dacMap[voice], velocity << 1);
 
   setLatchPin(voice, HIGH);
 }
 
-void handleNoteOff(byte channel, byte pitch, byte velocity)
-{  
-  if (pitch < 100) return;
-  if (pitch > 107) return;
 
-  digitalWrite(GATE_LED, LOW);
+int i;
 
-  byte voice = pitch - 100;
-
-//  velocityDAC.setValue(dacMap[voice], velocity << 1);
-
-  setLatchPin(voice, LOW);
+ISR(TIMER1_COMPA_vect) {
+  for (i=0; i<8; i++) {
+    
+    if (voice_gates[i] > 1) {
+      voice_gates[i] -= 1;
+    }
+    else if (voice_gates[i] == 1) {
+      setLatchPin(i, 0);
+      voice_gates[i] = 0;
+    }
+    
+  }
 }
 
- 
 
 // -----------------------------------------------------------------------------
 
@@ -90,9 +98,26 @@ void setup()
   pinMode(GATE_LED, OUTPUT);
 
   MIDI.setHandleNoteOn(handleNoteOn);
-  MIDI.setHandleNoteOff(handleNoteOff);
 
-  MIDI.begin(10);
+    cli();//stop interrupts
+    
+    //set timer1 interrupt at 1kHz
+    TCCR1A = 0;// set entire TCCR1A register to 0
+    TCCR1B = 0;// same for TCCR1B
+    TCNT1  = 0;//initialize counter value to 0;
+    // set timer count for 1khz increments
+    OCR1A = 1999;// = (16*10^6) / (1000*8) - 1
+    // turn on CTC mode
+    TCCR1B |= (1 << WGM12);
+    // Set CS11 bit for 8 prescaler
+    TCCR1B |= (1 << CS11);   
+    // enable timer compare interrupt
+    TIMSK1 |= (1 << OCIE1A);
+    
+    sei();//allow interrupts
+    
+    
+    MIDI.begin(10);
 }
 
 void loop()
