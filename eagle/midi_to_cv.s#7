@@ -15517,18 +15517,18 @@ at 30/07/2012 17:45:58</description>
 <segment>
 <pinref part="IC2" gate="A" pin="DO"/>
 <wire x1="86.36" y1="66.04" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="66.04" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="!E"/>
-<wire x1="99.06" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="66.04" x2="91.44" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="D"/>
+<wire x1="91.44" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="IC2" gate="A" pin="EO"/>
 <wire x1="86.36" y1="63.5" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="63.5" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="D"/>
-<wire x1="88.9" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="63.5" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="!E"/>
+<wire x1="99.06" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
