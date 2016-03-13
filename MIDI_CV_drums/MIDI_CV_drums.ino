@@ -15,7 +15,10 @@
 
 #define GATE_LED 13
 
-//TLV5628 velocityDAC();
+TLV5628 velocityDAC(CLK_PIN, DATA_PIN, LOAD_PIN, LDAC_PIN);
+
+// this corrects since the layout doesn't maintain voice order for the DAC output lines
+byte dacMap[] = {0, 1, 2, 3, 7, 6, 5, 4};
 
 MIDI_CREATE_DEFAULT_INSTANCE();
 
@@ -54,9 +57,9 @@ void handleNoteOn(byte channel, byte pitch, byte velocity)
 
   digitalWrite(GATE_LED, HIGH);
 
-  int voice = pitch - 100;
+  byte voice = pitch - 100;
 
-//  velocityDAC.setValue(voice, velocity << 1);
+  velocityDAC.setValue(dacMap[voice], velocity << 1);
 
   setLatchPin(voice, HIGH);
 }
@@ -68,9 +71,9 @@ void handleNoteOff(byte channel, byte pitch, byte velocity)
 
   digitalWrite(GATE_LED, LOW);
 
-  int voice = pitch - 100;
+  byte voice = pitch - 100;
 
-//  velocityDAC.setValue(voice, velocity << 1);
+//  velocityDAC.setValue(dacMap[voice], velocity << 1);
 
   setLatchPin(voice, LOW);
 }
