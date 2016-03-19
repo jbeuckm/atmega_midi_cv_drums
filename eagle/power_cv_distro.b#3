@@ -1321,6 +1321,30 @@ type 0204, grid 2.5 mm</description>
 <text x="-2.1336" y="1.1684" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.1336" y="-2.3114" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="C025-025X050">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.5 mm, outline 2.5 x 5 mm</description>
+<wire x1="-2.159" y1="1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-1.27" x2="-2.159" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.413" y1="1.016" x2="2.413" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="1.016" x2="-2.413" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.27" x2="2.413" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="1.016" x2="-2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.159" y1="-1.27" x2="2.413" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.413" y1="-1.016" x2="-2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.762" y1="0" x2="0.381" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.381" y1="0" x2="0.254" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="0.762" width="0.254" layer="21"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-0.762" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="0.762" x2="-0.254" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="-0.762" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.381" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.381" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.286" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="eurorack">
@@ -1748,6 +1772,10 @@ design rules under a new name.</description>
 <element name="R30" library="rcl" package="0207/7" value="1k" x="29.21" y="52.07" rot="R90"/>
 <element name="R31" library="rcl" package="0207/7" value="1k" x="24.13" y="52.07" rot="R90"/>
 <element name="R32" library="rcl" package="0207/7" value="1k" x="19.05" y="52.07" rot="R90"/>
+<element name="C1" library="rcl" package="C025-025X050" value="" x="3.81" y="-3.81"/>
+<element name="C2" library="rcl" package="C025-025X050" value="" x="3.81" y="-8.89"/>
+<element name="C3" library="rcl" package="C025-025X050" value="" x="3.81" y="-13.97"/>
+<element name="C4" library="rcl" package="C025-025X050" value="" x="3.81" y="-19.05"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1799,9 +1827,9 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="2"/>
 <wire x1="71.12" y1="76.835" x2="71.12" y2="75.565" width="0.8128" layer="16"/>
 <wire x1="71.12" y1="75.565" x2="69.215" y2="73.66" width="0.8128" layer="16"/>
-<wire x1="69.215" y1="73.66" x2="67.945" y2="73.66" width="0.8128" layer="16"/>
-<wire x1="67.945" y1="73.66" x2="67.31" y2="72.39" width="0.8128" layer="16"/>
-<wire x1="67.31" y1="72.39" x2="67.31" y2="63.5" width="0.8128" layer="16"/>
+<wire x1="69.215" y1="73.66" x2="67.945" y2="73.025" width="0.8128" layer="16"/>
+<wire x1="67.945" y1="73.025" x2="67.31" y2="71.755" width="0.8128" layer="16"/>
+<wire x1="67.31" y1="71.755" x2="67.31" y2="63.5" width="0.8128" layer="16"/>
 <wire x1="67.31" y1="63.5" x2="66.04" y2="62.23" width="0.8128" layer="16"/>
 <contactref element="R23" pad="2"/>
 <wire x1="66.04" y1="62.23" x2="66.04" y2="57.15" width="0.8128" layer="16"/>
@@ -1809,10 +1837,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$9">
 <contactref element="JP3" pad="8"/>
-<wire x1="57.15" y1="76.2" x2="46.355" y2="76.835" width="0.8128" layer="16"/>
+<wire x1="57.15" y1="74.295" x2="46.355" y2="76.835" width="0.8128" layer="16"/>
 <contactref element="R25" pad="2"/>
-<wire x1="57.15" y1="76.2" x2="57.15" y2="58.42" width="0.8128" layer="16"/>
-<wire x1="57.15" y1="58.42" x2="54.61" y2="55.88" width="0.8128" layer="16"/>
+<wire x1="57.15" y1="74.295" x2="57.15" y2="69.85" width="0.8128" layer="16"/>
+<wire x1="57.15" y1="69.85" x2="54.61" y2="55.88" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="JP3" pad="7"/>
@@ -1855,8 +1883,8 @@ design rules under a new name.</description>
 <contactref element="JP3" pad="1"/>
 <contactref element="U13" pad="5"/>
 <wire x1="28.575" y1="76.835" x2="25.4" y2="76.2" width="0.8128" layer="16"/>
-<wire x1="25.4" y1="76.2" x2="22.225" y2="73.66" width="0.8128" layer="16"/>
-<wire x1="22.225" y1="73.66" x2="22.225" y2="67.31" width="0.8128" layer="16"/>
+<wire x1="25.4" y1="76.2" x2="22.225" y2="71.755" width="0.8128" layer="16"/>
+<wire x1="22.225" y1="71.755" x2="22.225" y2="67.31" width="0.8128" layer="16"/>
 <wire x1="22.225" y1="67.31" x2="21.59" y2="66.04" width="0.8128" layer="16"/>
 <wire x1="21.59" y1="66.04" x2="20.32" y2="66.04" width="0.8128" layer="16"/>
 </signal>
@@ -2219,8 +2247,8 @@ design rules under a new name.</description>
 <contactref element="U11" pad="5"/>
 <wire x1="63.5" y1="66.04" x2="64.77" y2="66.04" width="0.8128" layer="16"/>
 <wire x1="64.77" y1="66.04" x2="65.405" y2="66.675" width="0.8128" layer="16"/>
-<wire x1="65.405" y1="66.675" x2="65.405" y2="74.295" width="0.8128" layer="16"/>
-<wire x1="65.405" y1="74.295" x2="67.31" y2="76.2" width="0.8128" layer="16"/>
+<wire x1="65.405" y1="66.675" x2="65.405" y2="73.66" width="0.8128" layer="16"/>
+<wire x1="65.405" y1="73.66" x2="67.31" y2="76.2" width="0.8128" layer="16"/>
 <wire x1="67.31" y1="76.2" x2="68.58" y2="76.835" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$23">
