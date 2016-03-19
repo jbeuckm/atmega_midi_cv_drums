@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6448,10 +6448,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R30" library="rcl" deviceset="R-US_" device="0207/7" value="1k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0207/7" value="1k"/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0207/7" value="1k"/>
-<part name="C1" library="rcl" deviceset="C-US" device="025-025X050"/>
-<part name="C2" library="rcl" deviceset="C-US" device="025-025X050"/>
-<part name="C3" library="rcl" deviceset="C-US" device="025-025X050"/>
-<part name="C4" library="rcl" deviceset="C-US" device="025-025X050"/>
+<part name="C1" library="rcl" deviceset="C-US" device="025-025X050" value="100n"/>
+<part name="C2" library="rcl" deviceset="C-US" device="025-025X050" value="100n"/>
+<part name="C3" library="rcl" deviceset="C-US" device="025-025X050" value="100n"/>
+<part name="C4" library="rcl" deviceset="C-US" device="025-025X050" value="100n"/>
 </parts>
 <sheets>
 <sheet>
@@ -6696,7 +6696,24 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U9" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="-58.42" y1="104.14" x2="-45.72" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="104.14" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="104.14" x2="-45.72" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="-45.72" y1="99.06" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="99.06" x2="-38.1" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="99.06" x2="-30.48" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="99.06" x2="-22.86" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="99.06" x2="-15.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="99.06" x2="-15.24" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-45.72" y="99.06"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-22.86" y1="101.6" x2="-22.86" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-22.86" y="99.06"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="101.6" x2="-30.48" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-30.48" y="99.06"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-38.1" y1="101.6" x2="-38.1" y2="99.06" width="0.1524" layer="91"/>
+<junction x="-38.1" y="99.06"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -6874,7 +6891,24 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U9" gate="G$1" pin="+12V"/>
 <pinref part="P+3" gate="1" pin="+12V"/>
 <wire x1="-58.42" y1="106.68" x2="-53.34" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="106.68" x2="-53.34" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="106.68" x2="-53.34" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="-53.34" y1="111.76" x2="-53.34" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="111.76" x2="-38.1" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="111.76" x2="-30.48" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="111.76" x2="-22.86" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="111.76" x2="-15.24" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="111.76" x2="-15.24" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-53.34" y="111.76"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="109.22" x2="-22.86" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-22.86" y="111.76"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="109.22" x2="-30.48" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-30.48" y="111.76"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="109.22" x2="-38.1" y2="111.76" width="0.1524" layer="91"/>
+<junction x="-38.1" y="111.76"/>
 </segment>
 <segment>
 <pinref part="U10" gate="A" pin="VDD"/>
