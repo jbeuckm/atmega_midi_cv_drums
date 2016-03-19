@@ -15351,14 +15351,14 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="R10" gate="G$1" x="134.62" y="33.02"/>
 <instance part="R11" gate="G$1" x="144.78" y="30.48"/>
 <instance part="R12" gate="G$1" x="134.62" y="27.94"/>
-<instance part="R13" gate="G$1" x="142.24" y="-17.78"/>
-<instance part="R14" gate="G$1" x="154.94" y="-25.4"/>
-<instance part="R16" gate="G$1" x="142.24" y="-33.02"/>
-<instance part="R17" gate="G$1" x="154.94" y="-40.64"/>
-<instance part="R18" gate="G$1" x="142.24" y="-48.26"/>
-<instance part="R19" gate="G$1" x="154.94" y="-55.88"/>
-<instance part="R20" gate="G$1" x="142.24" y="-63.5"/>
-<instance part="R21" gate="G$1" x="154.94" y="-71.12"/>
+<instance part="R13" gate="G$1" x="139.7" y="10.16"/>
+<instance part="R14" gate="G$1" x="152.4" y="2.54"/>
+<instance part="R16" gate="G$1" x="139.7" y="-5.08"/>
+<instance part="R17" gate="G$1" x="152.4" y="-12.7"/>
+<instance part="R18" gate="G$1" x="139.7" y="-20.32"/>
+<instance part="R19" gate="G$1" x="152.4" y="-27.94"/>
+<instance part="R20" gate="G$1" x="139.7" y="-35.56"/>
+<instance part="R21" gate="G$1" x="152.4" y="-43.18"/>
 <instance part="JP2" gate="A" x="182.88" y="33.02" rot="R180"/>
 <instance part="JP3" gate="A" x="182.88" y="7.62" rot="R180"/>
 <instance part="R22" gate="G$1" x="20.32" y="101.6" rot="R90"/>
@@ -15372,14 +15372,16 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="GND6" gate="1" x="17.78" y="91.44"/>
 <instance part="GND7" gate="1" x="50.8" y="96.52"/>
 <instance part="GND8" gate="1" x="60.96" y="96.52"/>
-<instance part="IC1" gate="A" x="124.46" y="-17.78"/>
-<instance part="IC1" gate="B" x="137.16" y="-25.4"/>
-<instance part="IC1" gate="C" x="124.46" y="-33.02"/>
-<instance part="IC1" gate="D" x="137.16" y="-40.64"/>
-<instance part="IC4" gate="A" x="124.46" y="-48.26"/>
-<instance part="IC4" gate="B" x="137.16" y="-55.88"/>
-<instance part="IC4" gate="C" x="124.46" y="-63.5"/>
-<instance part="IC4" gate="D" x="137.16" y="-71.12"/>
+<instance part="IC1" gate="A" x="124.46" y="10.16"/>
+<instance part="IC1" gate="B" x="137.16" y="2.54"/>
+<instance part="IC1" gate="C" x="124.46" y="-5.08"/>
+<instance part="IC1" gate="D" x="137.16" y="-12.7"/>
+<instance part="IC4" gate="A" x="124.46" y="-20.32"/>
+<instance part="IC4" gate="B" x="137.16" y="-27.94"/>
+<instance part="IC4" gate="C" x="124.46" y="-35.56"/>
+<instance part="IC4" gate="D" x="137.16" y="-43.18"/>
+<instance part="IC1" gate="P" x="78.74" y="-55.88"/>
+<instance part="IC4" gate="P" x="86.36" y="-55.88"/>
 </instances>
 <busses>
 </busses>
@@ -15780,7 +15782,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$22" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="-17.78" x2="177.8" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="10.16" x2="177.8" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="-17.78" x2="213.36" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-7.62" x2="213.36" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="7"/>
@@ -15790,7 +15792,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$24" class="0">
 <segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="-25.4" x2="170.18" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="2.54" x2="170.18" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="-25.4" x2="210.82" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="-10.16" x2="210.82" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="5"/>
@@ -15800,8 +15802,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$28" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="-33.02" x2="160.02" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-33.02" x2="167.64" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-5.08" x2="160.02" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="-5.08" x2="167.64" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-33.02" x2="208.28" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="-12.7" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="3"/>
@@ -15811,7 +15813,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$29" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="-40.64" x2="167.64" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-12.7" x2="167.64" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-40.64" x2="205.74" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="-15.24" x2="205.74" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="1"/>
@@ -15821,8 +15823,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$40" class="0">
 <segment>
 <pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="-48.26" x2="162.56" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="-48.26" x2="193.04" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-20.32" x2="162.56" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-20.32" x2="193.04" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="-17.78" x2="193.04" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="1"/>
 <wire x1="185.42" y1="-2.54" x2="193.04" y2="-2.54" width="0.1524" layer="91"/>
@@ -15831,7 +15833,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$41" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="-55.88" x2="165.1" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-27.94" x2="165.1" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-55.88" x2="195.58" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="-20.32" x2="195.58" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="3"/>
@@ -15841,7 +15843,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <net name="N$51" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="-71.12" x2="167.64" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-43.18" x2="167.64" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-71.12" x2="200.66" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="-25.4" x2="200.66" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="7"/>
@@ -15927,7 +15929,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pinref part="JP3" gate="A" pin="5"/>
 <wire x1="198.12" y1="7.62" x2="185.42" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="-63.5" x2="167.64" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-35.56" x2="167.64" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="-63.5" x2="198.12" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="7.62" x2="198.12" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
@@ -16017,56 +16019,56 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <segment>
 <pinref part="IC4" gate="D" pin="OUT"/>
 <pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-71.12" x2="144.78" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-43.18" x2="144.78" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <pinref part="IC4" gate="C" pin="OUT"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="-63.5" x2="132.08" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-35.56" x2="132.08" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
 <pinref part="IC4" gate="B" pin="OUT"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-55.88" x2="144.78" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-27.94" x2="144.78" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$52" class="0">
 <segment>
 <pinref part="IC4" gate="A" pin="OUT"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="-48.26" x2="132.08" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-20.32" x2="132.08" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="IC1" gate="D" pin="OUT"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-40.64" x2="144.78" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-12.7" x2="144.78" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$54" class="0">
 <segment>
 <pinref part="IC1" gate="C" pin="OUT"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="-33.02" x2="132.08" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="-5.08" x2="132.08" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$55" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="OUT"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="-17.78" x2="132.08" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="-25.4" x2="144.78" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="2.54" x2="144.78" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

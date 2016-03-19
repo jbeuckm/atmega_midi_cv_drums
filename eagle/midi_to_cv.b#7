@@ -2195,7 +2195,7 @@ design rules under a new name.</description>
 <wire x1="11.43" y1="52.07" x2="13.97" y2="54.61" width="0.6604" layer="16"/>
 <wire x1="13.97" y1="54.61" x2="13.97" y2="60.6425" width="0.6604" layer="16"/>
 <wire x1="13.97" y1="60.6425" x2="13.81125" y2="60.80125" width="0.6604" layer="16"/>
-<wire x1="5.08" y1="38.1" x2="12.7" y2="38.1" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="38.1" x2="12.7" y2="38.1" width="0.6604" layer="16"/>
 </signal>
 <signal name="+12V">
 <contactref element="C4" pad="+"/>
@@ -2729,12 +2729,17 @@ design rules under a new name.</description>
 <signal name="N$55">
 <contactref element="IC1" pad="1"/>
 <contactref element="R13" pad="1"/>
-<wire x1="24.13" y1="15.24" x2="28.575" y2="28.575" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="15.24" x2="24.13" y2="24.13" width="0.6604" layer="16"/>
+<wire x1="24.13" y1="24.13" x2="28.575" y2="28.575" width="0.6604" layer="16"/>
 </signal>
 <signal name="N$56">
 <contactref element="IC1" pad="7"/>
 <contactref element="R14" pad="1"/>
-<wire x1="8.89" y1="15.24" x2="28.575" y2="31.115" width="0" layer="19" extent="1-1"/>
+<wire x1="28.575" y1="31.115" x2="27.305" y2="31.115" width="0.6604" layer="16"/>
+<wire x1="27.305" y1="31.115" x2="19.05" y2="22.86" width="0.6604" layer="16"/>
+<wire x1="19.05" y1="22.86" x2="12.7" y2="22.86" width="0.6604" layer="16"/>
+<wire x1="12.7" y1="22.86" x2="8.89" y2="19.05" width="0.6604" layer="16"/>
+<wire x1="8.89" y1="19.05" x2="8.89" y2="15.24" width="0.6604" layer="16"/>
 </signal>
 </signals>
 </board>

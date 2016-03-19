@@ -2684,7 +2684,11 @@ design rules under a new name.</description>
 <wire x1="91.44" y1="66.04" x2="91.44" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="91.44" y1="71.12" x2="93.98" y2="71.12" width="0" layer="19" extent="1-1"/>
 <wire x1="12.7" y1="30.48" x2="31.75" y2="26.67" width="0" layer="19" extent="16-16"/>
-<wire x1="5.08" y1="33.02" x2="12.7" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="33.02" x2="6.35" y2="33.02" width="0.6604" layer="16"/>
+<wire x1="6.35" y1="33.02" x2="7.62" y2="31.75" width="0.6604" layer="16"/>
+<wire x1="7.62" y1="31.75" x2="10.16" y2="31.75" width="0.6604" layer="16"/>
+<wire x1="10.16" y1="31.75" x2="11.43" y2="30.48" width="0.6604" layer="16"/>
+<wire x1="11.43" y1="30.48" x2="12.7" y2="30.48" width="0.6604" layer="16"/>
 </signal>
 <signal name="V+">
 <contactref element="IC1" pad="4"/>
@@ -2729,12 +2733,17 @@ design rules under a new name.</description>
 <signal name="N$55">
 <contactref element="IC1" pad="1"/>
 <contactref element="R13" pad="1"/>
-<wire x1="24.13" y1="15.24" x2="28.575" y2="28.575" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="15.24" x2="24.13" y2="24.13" width="0.6604" layer="16"/>
+<wire x1="24.13" y1="24.13" x2="28.575" y2="28.575" width="0.6604" layer="16"/>
 </signal>
 <signal name="N$56">
 <contactref element="IC1" pad="7"/>
 <contactref element="R14" pad="1"/>
-<wire x1="8.89" y1="15.24" x2="28.575" y2="31.115" width="0" layer="19" extent="1-1"/>
+<wire x1="28.575" y1="31.115" x2="27.305" y2="31.115" width="0.6604" layer="16"/>
+<wire x1="27.305" y1="31.115" x2="19.05" y2="22.86" width="0.6604" layer="16"/>
+<wire x1="19.05" y1="22.86" x2="12.7" y2="22.86" width="0.6604" layer="16"/>
+<wire x1="12.7" y1="22.86" x2="8.89" y2="19.05" width="0.6604" layer="16"/>
+<wire x1="8.89" y1="19.05" x2="8.89" y2="15.24" width="0.6604" layer="16"/>
 </signal>
 </signals>
 </board>
