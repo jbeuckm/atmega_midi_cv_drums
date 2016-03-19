@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15116,7 +15116,7 @@ at 30/07/2012 17:45:58</description>
 <part name="OK2" library="optocoupler" deviceset="6N138" device=""/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0207/10" value="220"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="270"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="470"/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="MIDI_IN" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="U$11" library="Texas Instruments_By_element14_Batch_1" deviceset="TLV5628C/I" device=""/>
@@ -15139,7 +15139,7 @@ at 30/07/2012 17:45:58</description>
 <part name="R21" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="2k4"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="0207/10" value="1k"/>
 <part name="LED" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
