@@ -15380,6 +15380,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="IC4" gate="B" x="137.16" y="-27.94"/>
 <instance part="IC4" gate="C" x="124.46" y="-35.56"/>
 <instance part="IC4" gate="D" x="137.16" y="-43.18"/>
+<instance part="IC1" gate="P" x="78.74" y="-55.88"/>
+<instance part="IC4" gate="P" x="86.36" y="-55.88"/>
 </instances>
 <busses>
 </busses>
