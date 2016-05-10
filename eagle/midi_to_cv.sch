@@ -14849,7 +14849,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R26" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
-<part name="R29" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="R29" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -14864,13 +14864,13 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R32" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R33" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R34" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R36" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R37" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R40" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
-<part name="R41" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="R41" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R42" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R43" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="X1" library="con-molex" deviceset="KK-156-6" device=""/>

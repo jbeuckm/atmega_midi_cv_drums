@@ -14397,32 +14397,26 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="KK-156-12">
+<package name="KK-156-6">
 <description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
-<wire x1="23.61" y1="4.95" x2="21.81" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="21.81" y1="4.95" x2="-21.785" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-21.785" y1="4.95" x2="-23.585" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-23.585" y1="4.95" x2="-23.585" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="-23.585" y1="-4.825" x2="23.61" y2="-4.825" width="0.2032" layer="21"/>
-<wire x1="23.61" y1="-4.825" x2="23.61" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-21.785" y1="2.525" x2="21.81" y2="2.525" width="0.2032" layer="21"/>
-<wire x1="21.81" y1="2.525" x2="21.81" y2="4.95" width="0.2032" layer="21"/>
-<wire x1="-21.785" y1="2.525" x2="-21.785" y2="4.95" width="0.2032" layer="21"/>
-<pad name="1" x="-21.78" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="2" x="-17.82" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="3" x="-13.86" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="4" x="-9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="5" x="-5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="6" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="7" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="8" x="5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="9" x="9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="10" x="13.86" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="11" x="17.82" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="12" x="21.78" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
-<text x="-24.28" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="25.55" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="11.73" y1="4.95" x2="9.93" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="9.93" y1="4.95" x2="-9.905" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-9.905" y1="4.95" x2="-11.705" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-11.705" y1="4.95" x2="-11.705" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="-11.705" y1="-4.825" x2="11.73" y2="-4.825" width="0.2032" layer="21"/>
+<wire x1="11.73" y1="-4.825" x2="11.73" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-9.905" y1="2.525" x2="9.93" y2="2.525" width="0.2032" layer="21"/>
+<wire x1="9.93" y1="2.525" x2="9.93" y2="4.95" width="0.2032" layer="21"/>
+<wire x1="-9.905" y1="2.525" x2="-9.905" y2="4.95" width="0.2032" layer="21"/>
+<pad name="1" x="-9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="2" x="-5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="3" x="-1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="4" x="1.98" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="5" x="5.94" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="6" x="9.9" y="0" drill="1.7" diameter="2.1844" shape="long" rot="R90"/>
+<text x="-12.4" y="-4.445" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="13.67" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -14487,7 +14481,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KK-156-12" prefix="X" uservalue="yes">
+<deviceset name="KK-156-6" prefix="X" uservalue="yes">
 <description>&lt;b&gt;KK 156 HEADER&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <gates>
@@ -14497,28 +14491,16 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <gate name="-4" symbol="M" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
 <gate name="-5" symbol="M" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
 <gate name="-6" symbol="M" x="0" y="-12.7" addlevel="always" swaplevel="1"/>
-<gate name="-7" symbol="M" x="0" y="-15.24" addlevel="always" swaplevel="1"/>
-<gate name="-8" symbol="M" x="0" y="-17.78" addlevel="always" swaplevel="1"/>
-<gate name="-9" symbol="M" x="0" y="-20.32" addlevel="always" swaplevel="1"/>
-<gate name="-10" symbol="M" x="0" y="-22.86" addlevel="always" swaplevel="1"/>
-<gate name="-11" symbol="M" x="0" y="-25.4" addlevel="always" swaplevel="1"/>
-<gate name="-12" symbol="M" x="0" y="-27.94" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="KK-156-12">
+<device name="" package="KK-156-6">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
-<connect gate="-10" pin="S" pad="10"/>
-<connect gate="-11" pin="S" pad="11"/>
-<connect gate="-12" pin="S" pad="12"/>
 <connect gate="-2" pin="S" pad="2"/>
 <connect gate="-3" pin="S" pad="3"/>
 <connect gate="-4" pin="S" pad="4"/>
 <connect gate="-5" pin="S" pad="5"/>
 <connect gate="-6" pin="S" pad="6"/>
-<connect gate="-7" pin="S" pad="7"/>
-<connect gate="-8" pin="S" pad="8"/>
-<connect gate="-9" pin="S" pad="9"/>
 </connects>
 <technologies>
 <technology name="">
@@ -14850,7 +14832,6 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R13" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R16" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
-<part name="X1" library="con-molex" deviceset="KK-156-12" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
 <part name="R17" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
@@ -14881,7 +14862,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="C12" library="rcl" deviceset="C-US" device="025-024X044" value="100n"/>
 <part name="C8" library="rcl" deviceset="C-US" device="025-024X044" value="100n"/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
-<part name="R33" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="R33" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R34" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R35" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R36" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
@@ -14892,6 +14873,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R41" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R42" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R43" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="X1" library="con-molex" deviceset="KK-156-6" device=""/>
+<part name="X2" library="con-molex" deviceset="KK-156-6" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14966,18 +14949,6 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="R13" gate="G$1" x="152.4" y="109.22"/>
 <instance part="R14" gate="G$1" x="139.7" y="93.98"/>
 <instance part="R16" gate="G$1" x="152.4" y="78.74"/>
-<instance part="X1" gate="-1" x="223.52" y="76.2"/>
-<instance part="X1" gate="-2" x="223.52" y="73.66"/>
-<instance part="X1" gate="-3" x="223.52" y="71.12"/>
-<instance part="X1" gate="-4" x="223.52" y="68.58"/>
-<instance part="X1" gate="-5" x="223.52" y="66.04"/>
-<instance part="X1" gate="-6" x="223.52" y="63.5"/>
-<instance part="X1" gate="-7" x="223.52" y="60.96"/>
-<instance part="X1" gate="-8" x="223.52" y="58.42"/>
-<instance part="X1" gate="-9" x="223.52" y="55.88"/>
-<instance part="X1" gate="-10" x="223.52" y="53.34"/>
-<instance part="X1" gate="-11" x="223.52" y="50.8"/>
-<instance part="X1" gate="-12" x="223.52" y="48.26"/>
 <instance part="R3" gate="G$1" x="167.64" y="55.88"/>
 <instance part="R7" gate="G$1" x="175.26" y="38.1"/>
 <instance part="R17" gate="G$1" x="167.64" y="25.4"/>
@@ -15022,6 +14993,18 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <instance part="R41" gate="G$1" x="180.34" y="-12.7"/>
 <instance part="R42" gate="G$1" x="167.64" y="-27.94"/>
 <instance part="R43" gate="G$1" x="180.34" y="-43.18"/>
+<instance part="X1" gate="-1" x="228.6" y="96.52"/>
+<instance part="X1" gate="-2" x="228.6" y="93.98"/>
+<instance part="X1" gate="-3" x="228.6" y="91.44"/>
+<instance part="X1" gate="-4" x="228.6" y="88.9"/>
+<instance part="X1" gate="-5" x="228.6" y="86.36"/>
+<instance part="X1" gate="-6" x="228.6" y="83.82"/>
+<instance part="X2" gate="-1" x="228.6" y="2.54"/>
+<instance part="X2" gate="-2" x="228.6" y="0"/>
+<instance part="X2" gate="-3" x="228.6" y="-2.54"/>
+<instance part="X2" gate="-4" x="228.6" y="-5.08"/>
+<instance part="X2" gate="-5" x="228.6" y="-7.62"/>
+<instance part="X2" gate="-6" x="228.6" y="-10.16"/>
 </instances>
 <busses>
 </busses>
@@ -15823,6 +15806,22 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <wire x1="180.34" y1="10.16" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R38" gate="G$1" pin="1"/>
 <junction x="182.88" y="17.78"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="R34" gate="G$1" pin="2"/>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="172.72" y1="96.52" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="R35" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="81.28" x2="190.5" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="S"/>
+<wire x1="190.5" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
