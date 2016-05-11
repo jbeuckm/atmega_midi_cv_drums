@@ -14849,7 +14849,7 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R26" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0204/2V" value="1k8"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
-<part name="R29" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="R29" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R30" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -14870,8 +14870,8 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <part name="R38" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="R40" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
-<part name="R41" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
-<part name="R42" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
+<part name="R41" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
+<part name="R42" library="rcl" deviceset="R-US_" device="0204/5" value="1k"/>
 <part name="R43" library="rcl" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="X1" library="con-molex" deviceset="KK-156-6" device=""/>
 <part name="X2" library="con-molex" deviceset="KK-156-6" device=""/>
@@ -15858,6 +15858,58 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <wire x1="215.9" y1="63.5" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-6" pin="S"/>
 <wire x1="215.9" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$59" class="0">
+<segment>
+<pinref part="R40" gate="G$1" pin="2"/>
+<pinref part="X2" gate="-1" pin="S"/>
+<wire x1="172.72" y1="2.54" x2="226.06" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$61" class="0">
+<segment>
+<pinref part="R41" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="-12.7" x2="187.96" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-12.7" x2="187.96" y2="0" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="187.96" y1="0" x2="226.06" y2="0" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$63" class="0">
+<segment>
+<pinref part="R42" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="-27.94" x2="190.5" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-27.94" x2="190.5" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="190.5" y1="-2.54" x2="226.06" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="R43" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="-43.18" x2="193.04" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-43.18" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-4" pin="S"/>
+<wire x1="193.04" y1="-5.08" x2="226.06" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="33.02" x2="220.98" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="33.02" x2="220.98" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-5" pin="S"/>
+<wire x1="220.98" y1="-7.62" x2="226.06" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$66" class="0">
+<segment>
+<pinref part="R38" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="17.78" x2="218.44" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="17.78" x2="218.44" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-6" pin="S"/>
+<wire x1="218.44" y1="-10.16" x2="226.06" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
