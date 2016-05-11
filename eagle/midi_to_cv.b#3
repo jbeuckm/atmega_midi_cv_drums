@@ -2083,7 +2083,7 @@ design rules under a new name.</description>
 <element name="R33" library="rcl" package="0204/5" value="1k" x="71.882" y="68.834"/>
 <element name="R34" library="rcl" package="0204/5" value="1k" x="45.974" y="68.834" rot="R180"/>
 <element name="R35" library="rcl" package="0204/5" value="1k" x="45.72" y="59.944" rot="R90"/>
-<element name="R36" library="rcl" package="0204/7" value="1k" x="75.438" y="58.674" rot="R90"/>
+<element name="R36" library="rcl" package="0204/7" value="1k" x="75.692" y="58.674" rot="R90"/>
 <element name="R37" library="rcl" package="0204/7" value="1k" x="93.98" y="57.404"/>
 <element name="R38" library="rcl" package="0204/7" value="1k" x="90.17" y="30.734" rot="R270"/>
 <element name="R39" library="rcl" package="0204/7" value="1k" x="80.01" y="25.654" rot="R270"/>
@@ -2246,9 +2246,9 @@ design rules under a new name.</description>
 <contactref element="U1" pad="19"/>
 <contactref element="R4" pad="2"/>
 <wire x1="33.02" y1="38.354" x2="34.29" y2="38.354" width="0.8128" layer="16"/>
-<wire x1="34.29" y1="38.354" x2="35.56" y2="37.084" width="0.8128" layer="16"/>
-<wire x1="35.56" y1="37.084" x2="35.56" y2="25.654" width="0.8128" layer="16"/>
-<wire x1="35.56" y1="25.654" x2="34.29" y2="24.384" width="0.8128" layer="16"/>
+<wire x1="34.29" y1="38.354" x2="35.814" y2="37.084" width="0.8128" layer="16"/>
+<wire x1="35.814" y1="37.084" x2="35.814" y2="25.654" width="0.8128" layer="16"/>
+<wire x1="35.814" y1="25.654" x2="34.29" y2="24.384" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="R4" pad="1"/>
@@ -2780,7 +2780,7 @@ design rules under a new name.</description>
 <contactref element="R36" pad="1"/>
 <wire x1="74.93" y1="52.324" x2="74.93" y2="49.784" width="0.8128" layer="16"/>
 <wire x1="74.93" y1="52.324" x2="74.93" y2="54.356" width="0.8128" layer="16"/>
-<wire x1="74.93" y1="54.356" x2="75.438" y2="54.864" width="0.8128" layer="16"/>
+<wire x1="74.93" y1="54.356" x2="75.692" y2="54.864" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$22">
 <contactref element="R17" pad="2"/>
@@ -2837,7 +2837,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$57">
 <contactref element="R36" pad="2"/>
-<wire x1="75.438" y1="62.484" x2="75.692" y2="62.484" width="0.8128" layer="16"/>
 <wire x1="75.692" y1="62.484" x2="81.534" y2="63.5" width="0.8128" layer="16"/>
 <wire x1="81.534" y1="63.5" x2="86.868" y2="63.5" width="0.8128" layer="16"/>
 <wire x1="86.868" y1="63.5" x2="90.17" y2="66.802" width="0.8128" layer="16"/>
