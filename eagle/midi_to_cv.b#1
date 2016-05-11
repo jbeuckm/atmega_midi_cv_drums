@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -164,6 +164,10 @@
 <wire x1="3.556" y1="73.66" x2="3.556" y2="71.882" width="1.6764" layer="46"/>
 <wire x1="3.556" y1="71.882" x2="5.588" y2="71.882" width="1.6764" layer="46"/>
 <wire x1="5.588" y1="71.882" x2="5.588" y2="73.66" width="1.6764" layer="46"/>
+<wire x1="97.79" y1="72.136" x2="95.758" y2="72.136" width="1.6764" layer="46"/>
+<wire x1="95.758" y1="72.136" x2="95.758" y2="70.358" width="1.6764" layer="46"/>
+<wire x1="95.758" y1="70.358" x2="97.79" y2="70.358" width="1.6764" layer="46"/>
+<wire x1="97.79" y1="70.358" x2="97.79" y2="72.136" width="1.6764" layer="46"/>
 </plain>
 <libraries>
 <library name="rcl">

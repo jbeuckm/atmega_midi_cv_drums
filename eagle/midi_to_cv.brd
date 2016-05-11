@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2008,7 +2008,7 @@ design rules under a new name.</description>
 <element name="C5" library="rcl" package="B45181A" value="10u" x="8.255" y="16.764" rot="R270"/>
 <element name="C6" library="rcl" package="C050-024X044" value="100n" x="20.32" y="17.018" rot="R270"/>
 <element name="C7" library="rcl" package="C050-024X044" value="100n" x="4.445" y="16.764" rot="R270"/>
-<element name="D2" library="SparkFun-DiscreteSemi" package="DIODE-1N4148" value="" x="7.62" y="61.214"/>
+<element name="D2" library="SparkFun-DiscreteSemi" package="DIODE-1N4148" value="" x="7.62" y="59.944"/>
 <element name="MIDI_IN" library="con-molex" package="22-23-2021" value="22-23-2021" x="12.065" y="67.564" rot="R270">
 <attribute name="OC_NEWARK" value="25C3832" x="12.065" y="67.564" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="12.065" y="67.564" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2273,12 +2273,12 @@ design rules under a new name.</description>
 <contactref element="OK2" pad="3"/>
 <contactref element="D2" pad="A"/>
 <contactref element="MIDI_IN" pad="2"/>
-<wire x1="3.81" y1="61.214" x2="6.35" y2="61.214" width="0.8128" layer="16"/>
+<wire x1="3.81" y1="59.944" x2="6.35" y2="61.214" width="0.8128" layer="16"/>
 <wire x1="6.35" y1="61.214" x2="8.89" y2="63.754" width="0.8128" layer="16"/>
 <wire x1="8.89" y1="63.754" x2="9.652" y2="64.77" width="0.8128" layer="16"/>
 <wire x1="9.652" y1="64.77" x2="10.922" y2="66.04" width="0.8128" layer="16"/>
 <wire x1="10.922" y1="66.04" x2="12.065" y2="66.294" width="0.8128" layer="16"/>
-<wire x1="3.81" y1="61.214" x2="2.032" y2="57.404" width="0.8128" layer="16"/>
+<wire x1="3.81" y1="59.944" x2="2.032" y2="57.404" width="0.8128" layer="16"/>
 <wire x1="2.032" y1="57.404" x2="2.032" y2="52.324" width="0.8128" layer="16"/>
 <wire x1="2.032" y1="52.324" x2="2.54" y2="51.054" width="0.8128" layer="16"/>
 <wire x1="2.54" y1="51.054" x2="5.08" y2="51.054" width="0.8128" layer="16"/>
@@ -2287,10 +2287,10 @@ design rules under a new name.</description>
 <contactref element="D2" pad="C"/>
 <contactref element="OK2" pad="2"/>
 <contactref element="R5" pad="2"/>
-<wire x1="11.43" y1="63.119" x2="11.43" y2="61.214" width="0.8128" layer="16"/>
+<wire x1="11.43" y1="63.119" x2="11.43" y2="59.944" width="0.8128" layer="16"/>
 <wire x1="5.08" y1="53.594" x2="6.35" y2="53.594" width="0.8128" layer="16"/>
 <wire x1="6.35" y1="53.594" x2="7.62" y2="57.404" width="0.8128" layer="16"/>
-<wire x1="7.62" y1="57.404" x2="11.43" y2="61.214" width="0.8128" layer="16"/>
+<wire x1="7.62" y1="57.404" x2="11.43" y2="59.944" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$19">
 <contactref element="R5" pad="1"/>
