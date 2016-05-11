@@ -4,7 +4,7 @@
 (This file generated from the board:)
 (.../atmega_midi_cv_drums/eagle/midi_to_cv.brd)
 (Current profile is .../pcbgcode.repo/profiles/mach.pp  )
-(This file generated 5/10/16 10:45 PM)
+(This file generated 5/10/16 10:52 PM)
 (Settings from pcb-machine.h)
 (spindle on time = 0.0000)
 (spindle speed = 20000.0000)
@@ -15,7 +15,7 @@
 (  High     Up        Down     Drill)
 (0.2500  	0.0500  	-0.0035 	-0.0750 )
 (Settings from pcb-defaults.h)
-(isolate min = 0.0040)
+(isolate min = 0.0050)
 (isolate max = 0.0200)
 (isolate step = 0.0010)
 (Generated bottom outlines, bottom drill, )
@@ -282,8 +282,8 @@ M06
 G00 Z0.0500  
 M03
 G04 P0.000000
-G82 X-0.1500 Y2.4100  Z-0.0750 F20    R0.0500  P0.020000
-G82 X-0.4500 Y2.4100  
+G82 X-0.1500 Y2.3600  Z-0.0750 F20    R0.0500  P0.020000
+G82 X-0.4500 Y2.3600  
 M05
 G00 Z1.5000  
 G00 X0.0000  Y0.0000  
