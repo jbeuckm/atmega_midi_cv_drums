@@ -7,7 +7,11 @@ A CMOS addressable latch (CD4099) generates eight trigger signals. Uses TLV5628 
 
 Euro power connectors distribute the trigger and accent signals for eight drum voices, using the “gate” and “CV” buss conventions from eurorack. The power distribution daughterboard includes four dual rail-to-rail opamps that scale the DAC output accent signals up to the intended 4-14V range (given +/-15V supply). Each power connector provides power, trigger and accent signals to the connected module.
 
-MIDI notes start at 100 so that channel 10 can be reused without overlapping the General MIDI percussion map.
+Assign each voice to a MIDI note number with this sysex message:
+
+```0x77 0x08 0x01 <voice> <MIDI_note> 0xf7```
+
+The voice number depends on which voice is connected to which dac output via the eurorack power style distribution connectors.
 
 ![midi schematic](schemo.png)
 
